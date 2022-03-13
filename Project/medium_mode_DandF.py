@@ -14,10 +14,10 @@ def speechRecognition():
         # value is the variable here
         
         #checks for 'D' and 'F'   and   Returns 0 or 1  or "Wrong Answer"
-        if value == 'd' or value == 'D' or value == 'dee' or value =='Dee':
-            return 0
-        elif value == 'f' or value == 'F':
-            return 1
+        if value == 'delta foxtrot' or value == 'Delta Foxtrot' or value == 'delta Foxtrot' or value =='Delta foxtrot':
+            return [0, 1]
+        elif value == 'foxtrot delta' or value == 'Foxtrot Delta' or value == 'Foxtrot delta' or value == 'foxtrot Delta':
+            return [1, 0]
         else:
             print("Wrong Answer")
             
