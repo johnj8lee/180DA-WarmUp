@@ -1,4 +1,7 @@
+
 import speech_recognition as sr
+
+
 
 r = sr.Recognizer()
 m = sr.Microphone()
@@ -14,6 +17,7 @@ try:
         try:
             # recognize speech using Google Speech Recognition
             value = r.recognize_google(audio)
+            # value is the variable here
 
             # we need some special handling here to correctly print unicode characters to standard output
             if str is bytes:  # this version of Python uses bytes for strings (Python 2)
